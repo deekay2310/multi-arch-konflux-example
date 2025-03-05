@@ -28,8 +28,13 @@ spec:
   - name: image-expires-after
     value: 5d
   - name: build-platforms
-    value:
-    - linux/x86_64
+    value:    
+    - linux-cxlarge/amd64
+    - linux-cxlarge/arm64
+    - linux-m8xlarge/amd64
+    - linux-m8xlarge/arm64
+    - linux-root/arm64
+    - linux-root/amd64
   - name: dockerfile
     value: ./Dockerfile
   pipelineSpec:
