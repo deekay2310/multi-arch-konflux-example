@@ -421,6 +421,8 @@ spec:
         - "false"
     - name: sast-coverity-check
       params:
+      - name: image-digest
+        value: $(tasks.build-image-index.results.IMAGE_DIGEST)
       - name: image-url
         value: $(tasks.build-image-index.results.IMAGE_URL)
       - name: IMAGE
@@ -453,7 +455,7 @@ spec:
         - name: name
           value: sast-coverity-check-oci-ta
         - name: bundle
-          value: quay.io/konflux-ci/tekton-catalog/task-sast-coverity-check-oci-ta:0.3@sha256:c926568ce63e4f63e18bb6a4178caca2e8192f6e3b830bbcd354e6485d29458c
+          value: quay.io/konflux-ci/tekton-catalog/task-sast-coverity-check-oci-ta:0.3@sha256:5f81372e21a3c6f4a745b723e444b6eb81a11bdff8740e0ce4b96ad42924e45e
         - name: kind
           value: task
         resolver: bundles
