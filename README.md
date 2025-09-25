@@ -1,5 +1,5 @@
-# multi-arch-konflux-sample
-A simple sample for using multi-arch pipelines on the Red Hat Konflux clusters
+# multi-arch-konflux-example
+A simple example for using multi-arch pipelines on the Red Hat Konflux clusters
 
 ## Adding New Components to Konflux
 Each test component in the Konflux clusters comes from this repository and has its corresponding pipelines stored in this repo's `.tekton` directory.
