@@ -9,7 +9,7 @@ LABEL io.k8s.display-name="Do-nothing image"
 COPY LICENSE /licenses/
 
 RUN \
-  echo echo "\"hello! I do nothing\"" > /entrypoint.sh && \
+  echo echo "\"hello! I do nothing and this is a test\"" > /entrypoint.sh && \
   chmod +x /entrypoint.sh
 
 USER 65532:65532
